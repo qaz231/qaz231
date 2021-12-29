@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru" id="lang">
+    <head>
+    <meta charset="utf-8">
+    <title id="title">My_ZXC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function main_menu(){
+                let  nachalo=document.querySelector(".nachalo"), q2=document.querySelector(".q2"), q1=document.querySelector(".q1"),  doing_now1=document.querySelector(".nachaloz"), doing_now4=document.querySelector(".main_menu"),  doing_now2=document.querySelector(".pumz"),  doing_now3=document.querySelector(".pumz1");
+                doing_now1.style.display="none";
+                doing_now2.style.display="none";
+                doing_now3.style.display="none";
+                doing_now4.style.display="none";
+                doing_now4.style.display="block";
+                q1.style.display="flex";
+                q2.style.display="flex";
+                nachalo.style.display="flex";
+            }
+            function nachalo(){
+                let  nachalo=document.querySelector(".nachalo"), q1=document.querySelector(".q1"), q2=document.querySelector(".q2"), doing_now1=document.querySelector(".nachaloz"), doing_now4=document.querySelector(".main_menu"),  doing_now2=document.querySelector(".pumz"),  doing_now3=document.querySelector(".pumz1");
+                nachalo.style.display="none";
+                q1.style.display="none"
+                q2.style.display="none"
+                doing_now1.style.display="none";
+                doing_now2.style.display="none";
+                doing_now3.style.display="none";
+                doing_now4.style.display="none";
+                doing_now1.style.display="block";
+            }
+            function q1(){
+                let  q1=document.querySelector(".q1"), nachalo=document.querySelector(".nachalo"), q2=document.querySelector(".q2"), doing_now1=document.querySelector(".nachaloz"), doing_now4=document.querySelector(".main_menu"),  doing_now2=document.querySelector(".pumz"),  doing_now3=document.querySelector(".pumz1");
+                q1.style.display="none";
+                q2.style.display="none";
+                nachalo.style.display="none";
+                doing_now1.style.display="none";
+                doing_now2.style.display="none";
+                doing_now3.style.display="none";
+                doing_now4.style.display="none";
+                doing_now2.style.display="block";
+            }
+            function q2(){
+                let  q2=document.querySelector(".q2") ,nachalo=document.querySelector(".nachalo"), q1=document.querySelector(".q1"), doing_now1=document.querySelector(".nachaloz"), doing_now4=document.querySelector(".main_menu"),  doing_now2=document.querySelector(".pumz"),  doing_now3=document.querySelector(".pumz1");
+                q2.style.display="none";
+                q1.style.display="none";
+                nachalo.style.display="none";
+                doing_now1.style.display="none";
+                doing_now2.style.display="none";
+                doing_now3.style.display="none";
+                doing_now4.style.display="none";
+                doing_now3.style.display="block";
+            }
+        </script>
+        <style>
+            html{
+                background: url("snow.gif");
+                height: 100%;
+                margin: 0;
+                -webkit-font-smoothing: antialiased;
+                display: flex;
+            }
+            .main_menu{
+                width: 90%;
+                height: 90%;
+                max-width: 100px;
+            }
+            .main_page{
+                background-color: #ffffff;
+                height: 100%;
+                position: absolute;
+                margin-left: 2%;
+                flex-wrap: wrap;
+                width: 95%;
+                max-width: 1000000px;
+            }
+            .text{
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: rgb(53, 16, 16);
+            height: 40%;
+            width: 60%;
+            left:5%;
+            top:10%;
+            }
+            .text1{
+                position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: rgb(53, 16, 16);
+            height: 40%;
+            width: 60%;
+            left:30%;
+            top:80%;
+            }
+            .qwerty123{
+                height: 20%;
+                width: 100%;
+                text-align: center;
+                color: rgb(53, 16, 16);
+            }
+        .q1{
+            position: absolute;
+            left: 60%;
+            top: 15%;
+            transition: all .4s ease;
+        }
+        .q1::before{
+            background:rgba(0, 0, 0, 0.4) ;
+            content: "Phantom Lancer";
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: #fff;
+            position: absolute;
+            opacity: 0;
+            transition: all .4s ease;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            max-width: 485px;
+            max-height: 270px;
+            left: 10%;
+        }
+        .q1:hover::before{
+            opacity: 1;
+        }
+        .q1:hover , .fg1 , .q1::before{
+            transform: scale(1.10);
+            cursor: pointer;
+        }
+        .q2{
+            position: absolute;
+            left: 17%;
+            top: 55%;
+            transition: all .4s ease;
+        }
+        .q2::before{
+            background:rgba(0, 0, 0, 0.4) ;
+            content: "Morphling";
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: #fff;
+            position: absolute;
+            opacity: 0;
+            transition: all .4s ease;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            max-width: 485px;
+            max-height: 270px;
+            left: 10%;
+        }
+        .q2:hover::before{
+            opacity: 1;
+        }
+        .q2:hover , .fg2 , .q2::before{
+            transform: scale(1.10);
+            cursor: pointer;
+        }
+        .nachalo{
+            position: absolute;
+            left: 15%;
+            top: 15%;
+            transition: all .4s ease;
+        }
+        .nachalo::before{
+            background:rgba(0, 0, 0, 0.4) ;
+            content: "Meduza";
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: #fff;
+            position: absolute;
+            opacity: 0;
+            transition: all .4s ease;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            max-width: 485px;
+            max-height: 270px;
+            left: 10%;
+        }
+        .nachalo:hover::before{
+            opacity: 1;
+        }
+        .nachalo:hover , .fg, .nachalo::before{
+            transform: scale(1.10);
+            cursor: pointer;
+        }
+        </style>
+    </head>>
+    <body>
+        <div class="main_page" style="display: block;">
+            <div class="main_menu" style="display: inline-block; ">
+                <div class="qwerty123" style="position: absolute; height: 20%; width: 100%; text-align: center;"><h2>С настпающим или уже наступившим</h2></div>
+                <div class="text1">Ячейки под фотки нажимаемые, так что понажимай </div>>
+                <div class="nachalo" onclick="nachalo()" style="display: block;">
+                    <div class ="fg"><img alt="Тут могла быть твоя фотка, но твои фотки запрещены" style="position: absolute; left: 55%; top: 10%; max-width: 500px; max-height: 500px;" src="лuni8.png"class ="fg"></div>
+                    </div>
+                </div>
+                <div class="q1" onclick="q1()" style="display: block;">
+                    <div class="fg1"><img alt="Тут тоже могла быть фотка" style="position: absolute; left: 60%; top: 20%; max-width: 500px; max-height: 500px;" src="лuni2.png"class="fg1"></div>
+                    </div>
+                </div>
+                <div class="q2" onclick="q2()" style="display: block;">
+                    <div class="fg2"><img alt="И тут..." style="position: absolute; left: 35%; top: 70%; max-width: 500px; max-height: 500px;" src="лuni3.png"class="fg2"></div>
+                </div>
+            </div>   
+        <div class="nachaloz" style="display: none;">
+            <div class=text>
+                <br>Сначала я хотел по подбирать фотки под разные черты харатера, но во первых фоток нет, а во втрорых я вспомнил, что твоя жизнь военная тайна.</br>
+                <br>Что ж, на самом деле не так просто придумать что-то умное, тем более, что мне сейчас весьма хреново</br>
+                <br>Пусть эта страничка будет посвященна принципам. Меня очень восхищает это упорство и верность убеждениям. Это реально круто. Сохрани верность им и в следущем году</br>
+                <img alt="" style="position: absolute; left: 5%; top: 70%; max-width: 700px; max-height: 700px;" src="man.jpeg">
+                <br>Пусть тут будут мандаринки</br>
+            </div>
+            <img alt="И сюда бы что-то мог вставить" style="position: absolute; left: 67%; top: 5%; max-width: 400px; max-height: 300px;" src="лuni9.png">
+            <div onclick="main_menu()" style="position: absolute; font-size: 30px; cursor: pointer;color: rgb(179, 171, 171); top: 0%; left: 5%;"><h6>Назад</h6></div>
+        </div>
+        <div class="pumz" style="display: none;">
+            <div class=text>
+                <br>Тут пусть будет про сверхлюдей</br> 
+                <br>Ты можешь это отрицать, но это правда. Не все смогли бы постоянно вкалывать, как ты. В принципе я не исключение, поэтому я так восхищаюсь эти да и не только я.</br> 
+                <br>Краткость - сестра таланта, а лишенным таланта я себя никогда не считал, и разводить воду я не умею. Вообщем много тут не будет.</br> 
+            </div>
+            <img alt="Не вышло (( с 4 картинкой" style="position: absolute; left: 64%; top: 5%; max-width: 400px; max-height: 300px;" src="лuni4.jpg">
+            <div onclick="main_menu()" style="position: absolute; font-size: 30px; cursor: pointer;color: rgb(179, 171, 171); top: 0%; left: 5%;"><h6>Назад</h6></div>
+        </div>
+        <div class="pumz1" style="display: none;">
+            <div class=text>
+                <br>У меня творческий кризис по жизни, поэтому я без понятия что еще такого прикольного можно написать да и вообще кто-то меня с днём рождения не поздравил, так что все честно я считаю</br>
+                <br><h3>С новым годом) </h3></br>
+            </div>
+            <div onclick="main_menu()" style="position: absolute; font-size: 30px; cursor: pointer;color: rgb(179, 171, 171); top: 0%; left: 5%;"><h6>Назад</h6></div>
+        </div>
+</div>
+        <div class="main_part" id="zxc"></div>
+        <script scr="script.js" lang="javascript/text"></script>
+    </body>
+</html>>
